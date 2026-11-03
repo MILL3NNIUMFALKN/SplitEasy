@@ -1,8 +1,8 @@
-# SplitEasy (shared groups)
+# SplitEasy v2
 
-- index.html       the whole app (create a group, join with a 5-digit code)
-- api/group.js     the server code (saves each group in Upstash Redis)
-- package.json     just a name, nothing to install
+index.html, manifest.json, icon-*.png : the website (put these in the repo root)
+api/group.js                          : the server code (put this in the api folder)
+package.json                          : just a name
 
-Deploy: upload this folder to GitHub, import the repo in Vercel (Framework: Other),
-then under Storage connect a free Upstash Redis database to the project and redeploy.
+Upload everything to your GitHub repo, replacing the old index.html and api/group.js.
+Vercel redeploys on its own. Your Upstash database stays connected.
